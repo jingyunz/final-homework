@@ -1,0 +1,63 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BUFLEN	scan.c	18;"	d	file:
+CC	Makefile	/^CC=gcc$/;"	m
+CLRARG	parse.c	18;"	d	file:
+DONE	scan.c	/^	START, INCOMMAND, INPARAM, INCOMMENT, INNUM, DONE$/;"	e	enum:__anon1	file:
+INCOMMAND	scan.c	/^	START, INCOMMAND, INPARAM, INCOMMENT, INNUM, DONE$/;"	e	enum:__anon1	file:
+INCOMMENT	scan.c	/^	START, INCOMMAND, INPARAM, INCOMMENT, INNUM, DONE$/;"	e	enum:__anon1	file:
+INNUM	scan.c	/^	START, INCOMMAND, INPARAM, INCOMMENT, INNUM, DONE$/;"	e	enum:__anon1	file:
+INPARAM	scan.c	/^	START, INCOMMAND, INPARAM, INCOMMENT, INNUM, DONE$/;"	e	enum:__anon1	file:
+INPUT	main.c	/^int   INPUT;$/;"	v
+OBJS	Makefile	/^OBJS=$(patsubst %.c,%.o,$(SRC))$/;"	m
+SRC	Makefile	/^SRC=$(wildcard *.c)$/;"	m
+START	scan.c	/^	START, INCOMMAND, INPARAM, INCOMMENT, INNUM, DONE$/;"	e	enum:__anon1	file:
+StateType	scan.c	/^}StateType;$/;"	t	typeref:enum:__anon1	file:
+arg	main.c	/^char  arg[MAXTOKENLEN + 1][MAXTOKENLEN + 1];$/;"	v
+arg	parse.c	/^char  arg[MAXTOKENLEN + 1][MAXTOKENLEN + 1];$/;"	v
+clearToken	parse.c	/^static void clearToken()$/;"	f	file:
+command_completion	readprocess.c	/^char **command_completion(const char *text, int start, int end)$/;"	f
+command_generator	readprocess.c	/^char *command_generator(const char *text, int state)$/;"	f
+commandarray	readprocess.c	/^static char *commandarray[] = {"login", "shutdown", "halt", "reboot", "install", "mount",$/;"	v	file:
+commands	parse.c	/^char  commands[MAXTOKENLEN + 1];$/;"	v
+currentToken	scan.c	/^TokenType   currentToken;   \/* current token to be returned *\/$/;"	v
+do_cd	build_in.c	/^void do_cd()$/;"	f
+do_command	parse.c	/^void do_command()$/;"	f
+do_exit	build_in.c	/^void do_exit()$/;"	f
+do_history	build_in.c	/^void do_history()$/;"	f
+do_pwd	build_in.c	/^void do_pwd()$/;"	f
+errno	errorprocess.c	/^int   errno;             \/* from errno.h to finger out the error *\/$/;"	v
+error_process	errorprocess.c	/^void error_process()$/;"	f
+forktoexec	exec.c	/^void forktoexec()$/;"	f
+getNextChar	scan.c	/^char getNextChar(void) $/;"	f
+getToken	scan.c	/^TokenType getToken(void)$/;"	f
+if_stmt	parse.c	/^void if_stmt()$/;"	f
+initialize_readline	readprocess.c	/^void initialize_readline()$/;"	f
+isbuildin	build_in.c	/^int isbuildin(char *s)$/;"	f
+keywordLookup	scan.c	/^static TokenType keywordLookup(char *s)$/;"	f	file:
+keywords	scan.c	/^}keywords[7] = { {"if", IF}, {"then", THEN}, {"else", ELSE},$/;"	v	typeref:struct:__anon2	file:
+line_read	readprocess.c	/^static char *line_read = (char *)0;$/;"	v	file:
+linebuf	scan.c	/^static char *linebuf = start;  \/* holds the current line which from readline that end of '\\0' *\/$/;"	v	file:
+linepos	scan.c	/^static int  linepos  = 1;     \/* current position in linebuf *\/$/;"	v	file:
+main	main.c	/^int main(int argc, char *argv[])$/;"	f
+match	parse.c	/^static void match(TokenType expected)$/;"	f	file:
+number	parse.c	/^static char number[MAXTOKENLEN + 1]; \/*  holds number in []*\/$/;"	v	file:
+parse	parse.c	/^void parse()$/;"	f
+pwd	main.c	/^char  pwd[MAXTOKENLEN + 1];$/;"	v
+rl_gets	readprocess.c	/^char *rl_gets()$/;"	f
+runbuildin	build_in.c	/^void runbuildin(BuildInType command)$/;"	f
+source	main.c	/^FILE  *source;$/;"	v
+start	scan.c	/^static char start[1] = {'\\0'}; $/;"	v	file:
+statement	parse.c	/^void statement()$/;"	f
+stmt_sequence	parse.c	/^void stmt_sequence()$/;"	f
+str	scan.c	/^	char *str;$/;"	m	struct:__anon2	file:
+tok	scan.c	/^	TokenType tok;$/;"	m	struct:__anon2	file:
+token	parse.c	/^static TokenType token;              \/* holds current token *\/$/;"	v	file:
+tokenString	main.c	/^char  tokenString[MAXTOKENLEN + 1];$/;"	v
+tokenString	parse.c	/^char  tokenString[MAXTOKENLEN + 1];$/;"	v
+ungetNextChar	scan.c	/^void ungetNextChar(void)$/;"	f
+while_stmt	parse.c	/^void while_stmt()$/;"	f
