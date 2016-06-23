@@ -20,7 +20,7 @@ A simple shell implementation with following functions:
 
 	1.  if [ number ]; then command; fi
 
-    2.	while [ number ]; do command; done
+	2.  while [ number ]; do command; done
 
 
 BUILD AND RUN
