@@ -2,31 +2,31 @@
 DESCRIPTION
 ============
 
+A simple shell implementation with following functions: 
 
-FUNCTIONS
-==========
+  -- Execute the command inputed by user properly.
 
-  -- run commands are compose of semicolon
+  -- Redirection.
 
-  -- have some build-in commands (cd, pwd, history, exit)
+  -- Pipe.
 
-  -- commands and file's name can auto completion (Tab)
+  -- Run in the background, with command nohup.
 
-  -- press up and down to lookup the historical command
+  -- History commands look up with up and down keys.
 
-  -- press left and right to modify the input
+  -- Auto completion (Tab)
 
-  -- Ctrl + L to clear the screen
+  -- Simple scripts: 
 
-  -- if [ number ]; then command; fi
+	1.  if [ number ]; then command; fi
 
-  -- while [ number ]; do command; done
-
-  -- more... 
+    2.	while [ number ]; do command; done
 
 
-INSTALLATION
+BUILD AND RUN
 =============
   You need the library of "readline".
-  Use make.
+  
+  $ make
+  $ ./jysh
 
